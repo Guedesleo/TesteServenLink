@@ -1,0 +1,46 @@
+<main class="fundo">
+  <img src="/assets/fundo.png" alt="fundo" class="img" />
+  <section class="container-md">
+    <div class="card">
+      <div class="card-body">
+        <h3>Bem Vindo! Seven Link</h3>
+        <form [formGroup]="signInForm" (ngSubmit)="signIn()">
+          <div class="mb-3" [formGroup]="signInForm">
+            <label>Login</label>
+            <input
+              type="email"
+              class="form-control"
+              aria-describedby="emailHelp"
+              placeholder="Informe o seu email"
+              formControlName="email"
+              required
+            />
+          </div>
+          <div class="mb-3" [formGroup]="signInForm">
+            <label class="form-label">Password</label>
+            <input
+              type="password"
+              class="form-control"
+              placeholder="Insira a sua senha"
+              [type]="hide ? 'password' : 'text'"
+              formControlName="password"
+              required
+            />
+          </div>
+
+          <div class="pull-right">
+            <a href="/forgot-password" aria-disabled="true"
+              >Esqueceu a Senha ?</a
+            >
+          </div>
+
+          <div>
+            <button type="submit" class="btn btn-outline-info btn-block">
+              Entrar
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>

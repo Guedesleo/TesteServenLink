@@ -1,0 +1,16 @@
+.nav-item .active {
+  color: blueviolet;
+  background-color: #d3d3d3;
+}
+
+.containersite {
+  padding: 0 !important;
+  border-right: 1px solid #000;
+}
+
+.nav-item .icon {
+  margin-right: 10px;
+}
+.nav-link {
+  cursor: pointer;
+}

@@ -1,0 +1,51 @@
+<main class="fundo">
+  <img src="/assets/fundo.png" alt="fundo" class="img" />
+  <section class="container-md" *ngIf="!isSignedIn">
+    <div class="card">
+      <div class="card-body">
+        <h3>Cadastra-se Seven Link</h3>
+        <div class="mb-3">
+          <label>Login</label>
+          <input
+            type="email"
+            class="form-control"
+            aria-describedby="emailHelp"
+            placeholder="Informe o seu email"
+            required
+            #emailSignup
+          />
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Password</label>
+          <input
+            type="password"
+            class="form-control"
+            placeholder="Digite uma senha"
+            #passwordSignup
+            required
+          />
+        </div>
+
+        <div>
+          <button
+            (click)="onSignup(emailSignup.value, passwordSignup.value)"
+            type="submit"
+            class="btn btn-outline-info btn-block"
+          >
+            Cadastrar-se
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<!-- <div *ngIf="!isSignedIn">
+  <h2>Sign up</h2>
+  Email: <input type="text" #emailSignup /> Password:<input
+    type="text"
+    #passwordSignup
+  />
+  <button (click)="onSignup(emailSignup.value, passwordSignup.value)">
+    Sign up
+  </button>
+</div> -->

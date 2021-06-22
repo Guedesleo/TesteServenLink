@@ -1,0 +1,7 @@
+.nav-item a:hover {
+  color: blueviolet;
+}
+
+.nav-item a {
+  font-size: 24px;
+}

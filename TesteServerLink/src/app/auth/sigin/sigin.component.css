@@ -1,0 +1,21 @@
+.card {
+  width: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 1px 5px 30px rgb(195, 195, 195);
+}
+
+.fundo {
+  background-color: rgb(243, 243, 243);
+}
+
+.img {
+  filter: grayscale(65%);
+}
+
+.pull-right {
+  float: right !important;
+  margin-bottom: 15px;
+}
